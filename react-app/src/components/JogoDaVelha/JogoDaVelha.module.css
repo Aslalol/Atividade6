@@ -1,0 +1,78 @@
+.panelTitle {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.status {
+  font-family: var(--mono);
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.cell {
+  width: 90px;
+  height: 90px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-family: var(--mono);
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s;
+}
+
+.cell:hover:not(:disabled) {
+  border-color: var(--accent);
+  background: rgba(124, 110, 255, 0.08);
+}
+
+.x {
+  color: var(--accent);
+}
+
+.o {
+  color: var(--accent2);
+}
+
+.win {
+  background: rgba(124, 110, 255, 0.15);
+  border-color: var(--accent);
+}
+
+.btnReset {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  border-radius: 6px;
+  padding: 8px 20px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.btnReset:hover {
+  color: var(--text);
+  border-color: var(--muted);
+}

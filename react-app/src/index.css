@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0f0f13;
+  --surface: #1a1a22;
+  --surface2: #22222e;
+  --accent: #7c6eff;
+  --accent2: #ff6e9c;
+  --text: #f0eeff;
+  --muted: #8884a8;
+  --border: rgba(124, 110, 255, 0.2);
+  --success: #4ade80;
+  --danger: #f87171;
+  --mono: 'Space Mono', monospace;
+  --sans: 'DM Sans', sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  min-height: 100vh;
+}
+
+button {
+  font-family: var(--sans);
+  cursor: pointer;
+}
+
+input {
+  font-family: var(--sans);
+}
