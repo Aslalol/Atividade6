@@ -25,7 +25,6 @@ function Calculadora() {
       setShouldReset(false);
       return;
     }
-
     if (key === '=') {
       if (op === null || operand === null) return;
       const b = parseFloat(display);
